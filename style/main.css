@@ -16,6 +16,7 @@ html {
 }
 
 body {
+    padding-top: 300px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -49,6 +50,13 @@ img {
 
 
 /* SITE HEADER */
+
+header {
+    background-color: #014E56;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
 
 .site-header-container {
     padding-top: 73px;
@@ -89,7 +97,9 @@ img {
 
 .nav-item:hover {
     text-decoration: underline;
-    color: #40838b;
+    color: #F67E7E;
+    transform:  scale(1.2);
+    font-size: 20px;
 }
 
 .nav-item:active {
@@ -110,9 +120,9 @@ img {
 }
 
 .btn_header:hover {
-    color: #a9d0d4;
-    background-color: #29555a;
-    border-color: #014E56;
+    color: #F67E7E;
+    background-color: #b6d2d5;
+    border-color: #F67E7E;
 }
 
 .btn_header:active {
@@ -125,7 +135,7 @@ img {
 /* HEADER END */
 
 
-/* SECTION FIND MEDIA TABLE */
+/* HEADER MEDIA TABLE */
 @media only screen and (max-width: 768px) {
     .site-header-container {
         padding-top: 64px;
@@ -147,10 +157,10 @@ img {
     }
 
 }
-/* SECTION FIND MEDIA TABLE */
+/* HEADER MEDIA TABLE */
 
 
-/* SECTION FIND MEDIA MOBILE */
+/* HEADER MEDIA MOBILE */
 @media only screen and (max-width: 576px) {
     .site-header-container {
         padding-top: 48px;
@@ -174,7 +184,7 @@ img {
         border: none;
     }
 }
-/* SECTION FIND MEDIA MOBILE */
+/* HEADER MEDIA MOBILE */
 
 
 /* MAIN SECTION */
@@ -754,7 +764,7 @@ img {
 
 /* SECTION READY DESKTOP */
 .ready {
-    padding: 76px 76px;
+    padding: 76px;
     background-color: #F67E7E;
 }
 
@@ -777,6 +787,11 @@ img {
     text-decoration: none;
     color: #012F34;
 }
+
+.ready-btn:hover {
+    background-color: #b6d2d5;
+    color: #F67E7E;
+}
 /* SECTION STORIES DESKTOP */
 
 
@@ -784,7 +799,7 @@ img {
 @media only screen and (max-width: 768px) {
     .ready {
         width: 100%;
-        padding: 76px 76px;
+        padding: 76px;
         background-color: #F67E7E;
     }
     
@@ -803,15 +818,15 @@ img {
         font-size: 32px;
         line-height: 32px;
     }
-    
+
     .ready-btn {
+        width: 200px;
         border: 2px solid #012F34;
         border-radius: 24px;    
         text-decoration: none;
         color: #012F34;
         line-height: 20px;
-        font-size: 18px;
-        padding: 9px 33px; 
+        font-size: 15px;
     }
 }
 /* SECTION STORIES TABLE */
@@ -822,7 +837,7 @@ img {
 @media only screen and (max-width: 576px) {
     .ready {
         width: 100%;
-        padding: 83px 83px;
+        padding: 83px;
         background-color: #F67E7E;
     }
     
@@ -837,6 +852,16 @@ img {
     
     .ready-heading {
         margin-bottom: 24px;
+    }
+
+    .ready-btn {
+        width: 200px;
+        border: 2px solid #012F34;
+        border-radius: 24px;    
+        text-decoration: none;
+        color: #012F34;
+        line-height: 20px;
+        font-size: 18px;
     }
 }
 /* SECTION STORIES MOBILE */
@@ -869,6 +894,13 @@ img {
     line-height: 28px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #F67E7E;
+    transform:  scale(1.2);
+    font-size: 20px;
 }
 
 .tugma {
@@ -926,7 +958,8 @@ img {
     
     .footer-container {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     
     .footer-link {
@@ -939,8 +972,16 @@ img {
     }
     
     .icon-item {
-        margin-left: auto;
-        margin-right: auto;
+    }
+
+    .footer-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .icon-text {
+        margin-left: 200px;
     }
 }
 /* FOOTER TABLE */
@@ -949,6 +990,8 @@ img {
 /* FOOTER MOBILE */
 @media only screen and (max-width: 576px) {
     .footer-wrapper {
+        margin-right: auto;
+        margin-left: auto;
         background-color: #002529;
         padding: 48px 48px;
     }
@@ -956,6 +999,8 @@ img {
     .footer-container {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
     
     .footer-link {
